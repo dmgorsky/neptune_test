@@ -71,11 +71,11 @@ In the service we need to implement
 * actual data in `get_stats` after `add_batch`
 
 ## Implementations
-1. Rust - w/o Actors (*Actix-web*)
+1. **Rust** - w/o Actors (*Actix-web*)
    https://github.com/dmgorsky/neptune_test_rust
-2. **WIP** Rust - with Actors (*Actix-web, Actix*)
+2. *WIP* Rust - with Actors (*Actix-web, Actix*)
    https://github.com/dmgorsky/neptune_test_rust_actors
-3. **WIP** Scala - with Actors (*Apache Pekko*)
+3. **Scala** - with Actors (*Akka*)
    https://github.com/dmgorsky/neptune_test_scala
-4. **WIP** Java - with Actors (*Play!, Apache Pekko*)
+4. **WIP** Java (*Play!, Apache Pekko* or *Spring Boot*)
    https://github.com/dmgorsky/neptune_test_java
