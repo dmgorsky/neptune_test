@@ -79,3 +79,5 @@ In the service we need to implement
    https://github.com/dmgorsky/neptune_test_scala
 4. **Java** (*Quarkus*)
    https://github.com/dmgorsky/neptune_test_java
+5. *WIP* **Go* (*Gin*)
+   https://github.com/dmgorsky/neptune_test_go
