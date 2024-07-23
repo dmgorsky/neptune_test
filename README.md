@@ -77,5 +77,5 @@ In the service we need to implement
    https://github.com/dmgorsky/neptune_test_rust_actors
 3. **Scala** - with Actors (*Akka*)
    https://github.com/dmgorsky/neptune_test_scala
-4. *WIP* Java (*Play!, Apache Pekko* or *Quarkus* or *Spring Boot*)
+4. **Java** (*Quarkus*)
    https://github.com/dmgorsky/neptune_test_java
