@@ -70,6 +70,21 @@ In the service we need to implement
 * correct borders of calculation stream in `get_stats`
 * actual data in `get_stats` after `add_batch`
 
+### 3. Algorithm[s]
+
+#### The 2-pass algorithm
+This Naïve algorithm implies using 2 passes over data stream:
+
+    * 1st pass to calculate mean - `sum(x) / n`
+    * 2nd pass to calculate variance using calculated mean - `sum[(x-mean)^2]/n`
+#### Welford's online algorithm
+It is able to compute the variance in a single pass using recurring formulas *for k > 1*:
+
+    * Mean[k] = Mean[k-1] + (x[k] - Mean[k-1])/k
+    * S[k] = S[k-1] + (x[k] - M[k-1]) * (x[k] - M[k]), and
+    * Variance = Sqrt( S[k] / (k-1) )
+
+
 ## Implementations
 1. **Rust** - w/o Actors (*Actix-web*)
    https://github.com/dmgorsky/neptune_test_rust
